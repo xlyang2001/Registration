@@ -12,7 +12,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
-model_path = r'Model/514/320_RegModel.pth'
+model_path = r'Model/320_RegModel.pth'
 
 model = Reg()
 model.load_state_dict(torch.load(model_path))
@@ -21,7 +21,7 @@ model.to(device)
 
 model.eval()
 
-xray = cv2.imread("DRR13.png", cv2.IMREAD_GRAYSCALE)
+xray = cv2.imread("Data/DRR_9000.png", cv2.IMREAD_GRAYSCALE)
 xray = cv2.resize(xray, (128, 128))
 xray = torch.tensor(xray, dtype=torch.float32)
 xray = xray.reshape((1, 1, 128, 128))
