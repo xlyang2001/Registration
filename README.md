@@ -9,6 +9,9 @@ This code was tested with `Pytorch` NVIDIA GeForce RTX 3090 GPU.
 ## Inference
 `test_reg.py`
 
+## Datasets
+Five preprocessed DRR images can be downloaded with  `Data/Drr_9000.png`
+
 ## Pre-trained model weights
 Pre-trained model weights can be downloaded with  `Model/320_RegModel.pth`
 
