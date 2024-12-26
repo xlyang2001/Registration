@@ -4,7 +4,7 @@
 - `Cuda`
 - `Numpy`
 
-This code was tested with `Pytorch` NVIDIA GeForce RTX 3090 GPU.
+This code was tested with `Pytorch` and `NVIDIA GeForce RTX 3090 GPU`.
 
 ## Inference
 `test_reg.py`
